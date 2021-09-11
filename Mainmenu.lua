@@ -18,8 +18,9 @@ local Loader = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
 local Emptyload = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
-local LoaderState = Instance.new("TextLabel")
 local Load = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local LoaderState = Instance.new("TextLabel")
 
 --Properties:
 
@@ -172,14 +173,28 @@ UICorner_6.Parent = Loader
 Emptyload.Name = "Emptyload"
 Emptyload.Parent = Loader
 Emptyload.AnchorPoint = Vector2.new(0.5, 0.5)
-Emptyload.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+Emptyload.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
 Emptyload.BorderSizePixel = 0
 Emptyload.Position = UDim2.new(0.496414751, 0, 0.567553401, 0)
 Emptyload.Selectable = true
 Emptyload.Size = UDim2.new(0.829999983, 0, 0.0299999975, 0)
 Emptyload.ZIndex = 300
 
+UICorner_7.CornerRadius = UDim.new(0, 6)
 UICorner_7.Parent = Emptyload
+
+Load.Name = "Load"
+Load.Parent = Emptyload
+Load.AnchorPoint = Vector2.new(0.5, 0.5)
+Load.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Load.BorderSizePixel = 0
+Load.Position = UDim2.new(0.500106573, 0, 0.56755352, 0)
+Load.Selectable = true
+Load.Size = UDim2.new(0, 0, 1, 0)
+Load.ZIndex = 301
+
+UICorner_8.CornerRadius = UDim.new(0, 6)
+UICorner_8.Parent = Load
 
 LoaderState.Name = "LoaderState"
 LoaderState.Parent = Loader
@@ -195,18 +210,9 @@ LoaderState.TextColor3 = Color3.fromRGB(243, 243, 243)
 LoaderState.TextSize = 24.000
 LoaderState.TextWrapped = true
 
-Load.Name = "Load"
-Load.Parent = Loader
-Load.AnchorPoint = Vector2.new(0.5, 0.5)
-Load.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Load.BorderSizePixel = 0
-Load.Position = UDim2.new(0.496414751, 0, 0.567553401, 0)
-Load.Size = UDim2.new(0, 0, 0.0299999975, 0)
-Load.ZIndex = 301
-
 -- Scripts:
 
-local function ARPRO_fake_script() -- Top.Handler 
+local function TXYR_fake_script() -- Top.Handler 
 	local script = Instance.new('LocalScript', Top)
 
 	--variables
@@ -222,7 +228,7 @@ local function ARPRO_fake_script() -- Top.Handler
 	local keynotify = false
 	local Weeny = script.Parent.Parent
 	local loaderui = script.Parent.Loader
-	local loadbar = script.Parent.Loader.Load
+	local loadbar = script.Parent.Loader.Emptyload.Load
 	local loadtxt = script.Parent.Loader.LoaderState
 	
 	local key = "1%9z0%4(8z"
@@ -320,22 +326,22 @@ local function ARPRO_fake_script() -- Top.Handler
 			main.Visible = false
 			loaderui.Visible = true
 			wait()
-			loadbar:TweenSize(UDim2.new(0, 20,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 20,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "Finding Game..."
 			wait(1.5)
-			loadbar:TweenSize(UDim2.new(0, 55,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 55,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "Initialising..."
 			wait(1.5)
-			loadbar:TweenSize(UDim2.new(0, 89,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 89,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "VoidHub is best..."
 			wait(1.5)
-			loadbar:TweenSize(UDim2.new(0, 143,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 143,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "Loading UI..."
 			wait(1.5)
-			loadbar:TweenSize(UDim2.new(0, 192,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 192,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "Checking Key..."
 			wait(1.5)
-			loadbar:TweenSize(UDim2.new(0, 290,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(1, 0,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "Welcome to Void Hub!"
 			wait(1)
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/LoadingPage.lua"))();
@@ -352,22 +358,22 @@ local function ARPRO_fake_script() -- Top.Handler
 			main.Visible = false
 			loaderui.Visible = true
 			wait()
-			loadbar:TweenSize(UDim2.new(0, 20,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 20,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "Finding Game..."
 			wait(1.5)
-			loadbar:TweenSize(UDim2.new(0, 55,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 55,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "Initialising..."
 			wait(1.5)
-			loadbar:TweenSize(UDim2.new(0, 89,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 89,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "VoidHub is best..."
 			wait(1.5)
-			loadbar:TweenSize(UDim2.new(0, 143,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 143,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "Loading UI..."
 			wait(1.5)
-			loadbar:TweenSize(UDim2.new(0, 192,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 192,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "Checking Key..."
 			wait(1.5)
-			loadbar:TweenSize(UDim2.new(0, 295,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 295,1.0, 0),'Out','Sine',1)
 			loadtxt.Text = "Welcome to Void Hub!"
 			wait(1)
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/LoadingPage.lua"))();
@@ -388,8 +394,8 @@ local function ARPRO_fake_script() -- Top.Handler
 	
 	
 end
-coroutine.wrap(ARPRO_fake_script)()
-local function YJBYJCG_fake_script() -- Top.Drag 
+coroutine.wrap(TXYR_fake_script)()
+local function EJWC_fake_script() -- Top.Drag 
 	local script = Instance.new('LocalScript', Top)
 
 	local UIS = game:GetService('UserInputService')
@@ -427,11 +433,11 @@ local function YJBYJCG_fake_script() -- Top.Drag
 		end
 	end)
 end
-coroutine.wrap(YJBYJCG_fake_script)()
-local function PSRB_fake_script() -- Loader.Loadthing 
+coroutine.wrap(EJWC_fake_script)()
+local function NGWVSAH_fake_script() -- Loader.Loadthing 
 	local script = Instance.new('LocalScript', Loader)
 
 	--loadscript
 	
 end
-coroutine.wrap(PSRB_fake_script)()
+coroutine.wrap(NGWVSAH_fake_script)()
