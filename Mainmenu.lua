@@ -1,5 +1,3 @@
--- sex on my sex
-
 local WeenyWorldRemapped = Instance.new("ScreenGui")
 local Top = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -208,7 +206,7 @@ Load.ZIndex = 301
 
 -- Scripts:
 
-local function EYGLGZA_fake_script() -- Top.Handler 
+local function PFDZF_fake_script() -- Top.Handler 
 	local script = Instance.new('LocalScript', Top)
 
 	--variables
@@ -345,8 +343,7 @@ local function EYGLGZA_fake_script() -- Top.Handler
 			loadbar:TweenSize(UDim2.new(0, 290,0.03, 0),'Out','Sine',1)
 			loadtxt.Text = "Welcome to Void Hub!"
 			wait(1)
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/LoadingPage.lua", true))()
-			end
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/LoadingPage.lua"))();
 			
 		elseif keytxt.Text == adminkey then
 			print("debug")
@@ -375,11 +372,10 @@ local function EYGLGZA_fake_script() -- Top.Handler
 			loadbar:TweenSize(UDim2.new(0, 192,0.03, 0),'Out','Sine',1)
 			loadtxt.Text = "Checking Key..."
 			wait(1.5)
-			loadbar:TweenSize(UDim2.new(0, 290,0.03, 0),'Out','Sine',1)
+			loadbar:TweenSize(UDim2.new(0, 295,0.03, 0),'Out','Sine',1)
 			loadtxt.Text = "Welcome to Void Hub!"
 			wait(1)
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/LoadingPage.lua", true))()
-			end
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/LoadingPage.lua"))();
 		else
 			print("Invalid Key!")
 			auth.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
@@ -397,8 +393,8 @@ local function EYGLGZA_fake_script() -- Top.Handler
 	
 	
 end
-coroutine.wrap(EYGLGZA_fake_script)()
-local function WLKREIY_fake_script() -- Top.Drag 
+coroutine.wrap(PFDZF_fake_script)()
+local function RJURU_fake_script() -- Top.Drag 
 	local script = Instance.new('LocalScript', Top)
 
 	local UIS = game:GetService('UserInputService')
@@ -436,11 +432,11 @@ local function WLKREIY_fake_script() -- Top.Drag
 		end
 	end)
 end
-coroutine.wrap(WLKREIY_fake_script)()
-local function CWSP_fake_script() -- Loader.Loadthing 
+coroutine.wrap(RJURU_fake_script)()
+local function TQDOYCN_fake_script() -- Loader.Loadthing 
 	local script = Instance.new('LocalScript', Loader)
 
 	--loadscript
 	
 end
-coroutine.wrap(CWSP_fake_script)()
+coroutine.wrap(TQDOYCN_fake_script)()
