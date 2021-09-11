@@ -45,7 +45,7 @@ Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.499999851, 0, 2.38483214, 0)
-Main.Size = UDim2.new(1.00000012, 0, 3.27710342, 0)
+Main.Size = UDim2.new(1.00000012, 0, 3.27710366, 0)
 
 UICorner_2.CornerRadius = UDim.new(0, 4)
 UICorner_2.Parent = Main
@@ -206,7 +206,7 @@ Load.ZIndex = 301
 
 -- Scripts:
 
-local function ANOCLUK_fake_script() -- Top.Handler 
+local function ARPRO_fake_script() -- Top.Handler 
 	local script = Instance.new('LocalScript', Top)
 
 	--variables
@@ -388,8 +388,8 @@ local function ANOCLUK_fake_script() -- Top.Handler
 	
 	
 end
-coroutine.wrap(ANOCLUK_fake_script)()
-local function JOLDZ_fake_script() -- Top.Drag 
+coroutine.wrap(ARPRO_fake_script)()
+local function YJBYJCG_fake_script() -- Top.Drag 
 	local script = Instance.new('LocalScript', Top)
 
 	local UIS = game:GetService('UserInputService')
@@ -427,11 +427,11 @@ local function JOLDZ_fake_script() -- Top.Drag
 		end
 	end)
 end
-coroutine.wrap(JOLDZ_fake_script)()
-local function ZYRXPN_fake_script() -- Loader.Loadthing 
+coroutine.wrap(YJBYJCG_fake_script)()
+local function PSRB_fake_script() -- Loader.Loadthing 
 	local script = Instance.new('LocalScript', Loader)
 
 	--loadscript
 	
 end
-coroutine.wrap(ZYRXPN_fake_script)()
+coroutine.wrap(PSRB_fake_script)()
