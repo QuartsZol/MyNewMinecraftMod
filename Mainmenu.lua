@@ -201,12 +201,12 @@ Load.AnchorPoint = Vector2.new(0.5, 0.5)
 Load.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Load.BorderSizePixel = 0
 Load.Position = UDim2.new(0.496414751, 0, 0.567553401, 0)
-Load.Size = UDim2.new(0, 0, 0.0299999993, 0)
+Load.Size = UDim2.new(0, 0, 0.0299999975, 0)
 Load.ZIndex = 301
 
 -- Scripts:
 
-local function PFDZF_fake_script() -- Top.Handler 
+local function ANOCLUK_fake_script() -- Top.Handler 
 	local script = Instance.new('LocalScript', Top)
 
 	--variables
@@ -304,11 +304,6 @@ local function PFDZF_fake_script() -- Top.Handler
 		auth.Visible = false
 		title.Visible = false
 		top:TweenSize(UDim2.new(0,0,0,0), 'Out', 'Sine', 1)
-		game.StarterGui:SetCore("SendNotification",  {
-			Title = "VoidHub	";
-			Text = "Thanks for using Void Hub!";
-			Duration = 2.5;
-		})
 	end)
 	
 	--authtext
@@ -393,8 +388,8 @@ local function PFDZF_fake_script() -- Top.Handler
 	
 	
 end
-coroutine.wrap(PFDZF_fake_script)()
-local function RJURU_fake_script() -- Top.Drag 
+coroutine.wrap(ANOCLUK_fake_script)()
+local function JOLDZ_fake_script() -- Top.Drag 
 	local script = Instance.new('LocalScript', Top)
 
 	local UIS = game:GetService('UserInputService')
@@ -432,11 +427,11 @@ local function RJURU_fake_script() -- Top.Drag
 		end
 	end)
 end
-coroutine.wrap(RJURU_fake_script)()
-local function TQDOYCN_fake_script() -- Loader.Loadthing 
+coroutine.wrap(JOLDZ_fake_script)()
+local function ZYRXPN_fake_script() -- Loader.Loadthing 
 	local script = Instance.new('LocalScript', Loader)
 
 	--loadscript
 	
 end
-coroutine.wrap(TQDOYCN_fake_script)()
+coroutine.wrap(ZYRXPN_fake_script)()
