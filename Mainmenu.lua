@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+-- sex on my sex
 
 local WeenyWorldRemapped = Instance.new("ScreenGui")
 local Top = Instance.new("Frame")
@@ -348,39 +345,7 @@ local function EYGLGZA_fake_script() -- Top.Handler
 			loadbar:TweenSize(UDim2.new(0, 290,0.03, 0),'Out','Sine',1)
 			loadtxt.Text = "Welcome to Void Hub!"
 			wait(1)
-			if game.PlaceId == "286090429" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/Arsenal.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "379614936" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/Assasin.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "3527629287" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/Big%20PaintBall.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "648362523" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/Breaking%20Point.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "621129760" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/KAT.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "3956818381" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/NinjaLegends.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "1962086868" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/TOH.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "983224898" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/Wild%20Revolvers.lua", true))()
-				top:Destroy()
-			else loadtxt.Text = "Game not found! (universal coming soon!)"
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/LoadingPage.lua", true))()
 			end
 			
 		elseif keytxt.Text == adminkey then
@@ -413,39 +378,7 @@ local function EYGLGZA_fake_script() -- Top.Handler
 			loadbar:TweenSize(UDim2.new(0, 290,0.03, 0),'Out','Sine',1)
 			loadtxt.Text = "Welcome to Void Hub!"
 			wait(1)
-			if game.PlaceId == "286090429" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/Arsenal.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "379614936" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/Assasin.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "3527629287" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/Big%20PaintBall.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "648362523" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/Breaking%20Point.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "621129760" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/KAT.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "3956818381" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/NinjaLegends.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "1962086868" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/TOH.lua", true))()
-				top:Destroy()
-			elseif game.PlaceId == "983224898" then
-				wait(1)
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/MinecraftBase/BaseAPI/Wild%20Revolvers.lua", true))()
-				top:Destroy()
-			else loadtxt.Text = "Game not found! (universal coming soon!)"
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/LoadingPage.lua", true))()
 			end
 		else
 			print("Invalid Key!")
