@@ -207,7 +207,7 @@ TitleUnderline.ZIndex = 999
 
 -- Scripts:
 
-local function JPLIPZH_fake_script() -- Top.Handler 
+local function IHJCI_fake_script() -- Top.Handler 
 	local script = Instance.new('LocalScript', Top)
 
 	--variables
@@ -406,8 +406,8 @@ local function JPLIPZH_fake_script() -- Top.Handler
 	
 	
 end
-coroutine.wrap(JPLIPZH_fake_script)()
-local function AKHM_fake_script() -- Top.Drag 
+coroutine.wrap(IHJCI_fake_script)()
+local function KFOU_fake_script() -- Top.Drag 
 	local script = Instance.new('LocalScript', Top)
 
 	local UIS = game:GetService('UserInputService')
@@ -445,11 +445,11 @@ local function AKHM_fake_script() -- Top.Drag
 		end
 	end)
 end
-coroutine.wrap(AKHM_fake_script)()
-local function QVLIS_fake_script() -- Loader.Loadthing 
+coroutine.wrap(KFOU_fake_script)()
+local function MBIJ_fake_script() -- Loader.Loadthing 
 	local script = Instance.new('LocalScript', Loader)
 
 	--loadscript
 	
 end
-coroutine.wrap(QVLIS_fake_script)()
+coroutine.wrap(MBIJ_fake_script)()
