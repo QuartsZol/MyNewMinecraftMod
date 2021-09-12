@@ -5,20 +5,19 @@ local Main = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local Auth = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local DiscordText = Instance.new("TextLabel")
-local UICorner_4 = Instance.new("UICorner")
-local DiscCopy = Instance.new("ImageButton")
 local KeyText = Instance.new("TextBox")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+local DiscordCopy = Instance.new("TextButton")
+local DiscCopy = Instance.new("ImageButton")
 local Title = Instance.new("TextLabel")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local Close = Instance.new("ImageButton")
 local Loader = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local Emptyload = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local Load = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local LoaderState = Instance.new("TextLabel")
 local TitleUnderline = Instance.new("Frame")
 
@@ -33,8 +32,8 @@ Top.Parent = WeenyWorldRemapped
 Top.AnchorPoint = Vector2.new(0.5, 0.5)
 Top.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Top.BorderSizePixel = 0
-Top.Position = UDim2.new(0.487968564, 0, 0.200000003, 0)
-Top.Size = UDim2.new(0.180000007, 0, 0.0500000007, 0)
+Top.Position = UDim2.new(0.499745309, 0, 0.168354437, 0)
+Top.Size = UDim2.new(0.170000002, 0, 0.0500000007, 0)
 Top.ZIndex = 2
 
 UICorner.CornerRadius = UDim.new(0, 4)
@@ -68,39 +67,6 @@ Auth.TextWrapped = true
 UICorner_3.CornerRadius = UDim.new(0, 4)
 UICorner_3.Parent = Auth
 
-DiscordText.Name = "DiscordText"
-DiscordText.Parent = Main
-DiscordText.AnchorPoint = Vector2.new(0.5, 0.5)
-DiscordText.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-DiscordText.BackgroundTransparency = 1.000
-DiscordText.BorderColor3 = Color3.fromRGB(30, 30, 30)
-DiscordText.BorderSizePixel = 0
-DiscordText.Position = UDim2.new(0.496348351, 0, 0.913408518, 0)
-DiscordText.Size = UDim2.new(0.420093983, 0, 0.169318184, 0)
-DiscordText.ZIndex = 20
-DiscordText.Font = Enum.Font.SourceSans
-DiscordText.Text = "Discord.gg/zSuckq8nnx"
-DiscordText.TextColor3 = Color3.fromRGB(243, 243, 243)
-DiscordText.TextSize = 16.000
-DiscordText.TextWrapped = true
-DiscordText.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_4.CornerRadius = UDim.new(0, 2)
-UICorner_4.Parent = DiscordText
-
-DiscCopy.Name = "DiscCopy"
-DiscCopy.Parent = DiscordText
-DiscCopy.AnchorPoint = Vector2.new(0.5, 0.5)
-DiscCopy.BackgroundTransparency = 1.000
-DiscCopy.BorderSizePixel = 0
-DiscCopy.LayoutOrder = 6
-DiscCopy.Position = UDim2.new(1.07584143, 0, 0.482016027, 0)
-DiscCopy.Size = UDim2.new(0.15384616, 0, 0.759998918, 0)
-DiscCopy.ZIndex = 50
-DiscCopy.Image = "rbxassetid://3926305904"
-DiscCopy.ImageRectOffset = Vector2.new(284, 84)
-DiscCopy.ImageRectSize = Vector2.new(36, 36)
-
 KeyText.Name = "KeyText"
 KeyText.Parent = Main
 KeyText.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -108,7 +74,7 @@ KeyText.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 KeyText.BackgroundTransparency = 0.450
 KeyText.BorderSizePixel = 0
 KeyText.Position = UDim2.new(0.499412388, 0, 0.310201764, 0)
-KeyText.Size = UDim2.new(0.659999967, 0, 0.210836411, 0)
+KeyText.Size = UDim2.new(0.800000012, 0, 0.210999995, 0)
 KeyText.ZIndex = 100
 KeyText.Font = Enum.Font.SourceSans
 KeyText.PlaceholderColor3 = Color3.fromRGB(150, 150, 150)
@@ -118,7 +84,34 @@ KeyText.TextColor3 = Color3.fromRGB(150, 150, 150)
 KeyText.TextSize = 14.000
 KeyText.TextWrapped = true
 
-UICorner_5.Parent = KeyText
+UICorner_4.Parent = KeyText
+
+DiscordCopy.Name = "DiscordCopy"
+DiscordCopy.Parent = Main
+DiscordCopy.AnchorPoint = Vector2.new(0.5, 0.5)
+DiscordCopy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiscordCopy.BackgroundTransparency = 1.000
+DiscordCopy.BorderSizePixel = 0
+DiscordCopy.Position = UDim2.new(0.497809589, 0, 0.882476985, 0)
+DiscordCopy.Size = UDim2.new(0.61285764, 0, 0.227014184, 0)
+DiscordCopy.Font = Enum.Font.Nunito
+DiscordCopy.Text = "Discord.gg/zSuckq8nnx"
+DiscordCopy.TextColor3 = Color3.fromRGB(243, 243, 243)
+DiscordCopy.TextSize = 16.000
+DiscordCopy.TextWrapped = true
+
+DiscCopy.Name = "DiscCopy"
+DiscCopy.Parent = DiscordCopy
+DiscCopy.AnchorPoint = Vector2.new(0.5, 0.5)
+DiscCopy.BackgroundTransparency = 1.000
+DiscCopy.BorderSizePixel = 0
+DiscCopy.LayoutOrder = 6
+DiscCopy.Position = UDim2.new(0.856567383, 0, 0.5409832, 0)
+DiscCopy.Size = UDim2.new(0.10884615, 0, 0.685953617, 0)
+DiscCopy.ZIndex = 50
+DiscCopy.Image = "rbxassetid://3926305904"
+DiscCopy.ImageRectOffset = Vector2.new(284, 84)
+DiscCopy.ImageRectSize = Vector2.new(36, 36)
 
 Title.Name = "Title"
 Title.Parent = Top
@@ -160,8 +153,8 @@ Loader.Position = UDim2.new(0.5, 0, 2.38499999, 0)
 Loader.Size = UDim2.new(1, 0, 3.27699995, 0)
 Loader.Visible = false
 
-UICorner_6.CornerRadius = UDim.new(0, 4)
-UICorner_6.Parent = Loader
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = Loader
 
 Emptyload.Name = "Emptyload"
 Emptyload.Parent = Loader
@@ -173,8 +166,8 @@ Emptyload.Selectable = true
 Emptyload.Size = UDim2.new(0.899999976, 0, 0.0250000004, 0)
 Emptyload.ZIndex = 300
 
-UICorner_7.CornerRadius = UDim.new(0, 6)
-UICorner_7.Parent = Emptyload
+UICorner_6.CornerRadius = UDim.new(0, 6)
+UICorner_6.Parent = Emptyload
 
 Load.Name = "Load"
 Load.Parent = Emptyload
@@ -186,8 +179,8 @@ Load.Selectable = true
 Load.Size = UDim2.new(0, 0, 1, 0)
 Load.ZIndex = 301
 
-UICorner_8.CornerRadius = UDim.new(0, 6)
-UICorner_8.Parent = Load
+UICorner_7.CornerRadius = UDim.new(0, 6)
+UICorner_7.Parent = Load
 
 LoaderState.Name = "LoaderState"
 LoaderState.Parent = Loader
@@ -214,14 +207,14 @@ TitleUnderline.ZIndex = 999
 
 -- Scripts:
 
-local function JJNGP_fake_script() -- Top.Handler 
+local function JPLIPZH_fake_script() -- Top.Handler 
 	local script = Instance.new('LocalScript', Top)
 
 	--variables
 	local top = script.Parent
 	local underline = script.Parent.TitleUnderline
-	local DiscordCopy = script.Parent.Main.DiscordText.DiscCopy
-	local disctext = script.Parent.Main.DiscordText
+	local DiscordCopy = script.Parent.Main.DiscordCopy.DiscCopy
+	local disctext = script.Parent.Main.DiscordCopy
 	local close = script.Parent.Close
 	local main = script.Parent.Main
 	local title = script.Parent.Title
@@ -232,6 +225,8 @@ local function JJNGP_fake_script() -- Top.Handler
 	local loaderui = script.Parent.Loader
 	local loadbar = script.Parent.Loader.Emptyload.Load
 	local loadtxt = script.Parent.Loader.LoaderState
+	local discordbounce = false
+	local discordbouncetime = 1
 	
 	local key = "1%9z0%4(8z"
 	local adminkey = "skidkid"
@@ -293,25 +288,41 @@ local function JJNGP_fake_script() -- Top.Handler
 	
 	
 	--discordnotify
+	disctext.MouseButton1Click:Connect(function()
+		if not discordbounce then
+			discordbounce = true
+			print("amoug")
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "VoidHub	";
+				Text = "VoidHub Discord has been copied to clipboard!";
+				Duration = 2.5;
+			})
+			setclipboard("https://discord.gg/zSuckq8nnx")
+			wait(discordbouncetime)
+			discordbounce = false
+		end
+	end)
+	
+	--discordnotify2
 	DiscordCopy.MouseButton1Click:Connect(function()
-		print("amoug")
-		game.StarterGui:SetCore("SendNotification",  {
-			Title = "VoidHub	";
-			Text = "VoidHub Discord has been copied to clipboard!";
-			Duration = 2.5;
-		})
-		setclipboard("https://discord.gg/zSuckq8nnx")
+		if not discordbounce then
+			discordbounce = true
+			print("amoug")
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "VoidHub	";
+				Text = "VoidHub Discord has been copied to clipboard!";
+				Duration = 2.5;
+			})
+			setclipboard("https://discord.gg/zSuckq8nnx")
+			wait(discordbouncetime)
+			discordbounce = false
+		end
 	end)
 	
 	
 	--close
 	close.MouseButton1Click:Connect(function()
-		underline:TweenSize(UDim2.new(0, 0,0, 0),'Out','Sine',1.5, true)
-		wait()
-		disctext.Visible = false
-		auth.Visible = false
-		title.Visible = false
-		top:TweenSize(UDim2.new(0,0,0,0), 'Out', 'Sine', 1)
+		top:TweenPosition(UDim2.new(0.5, 0,-0.2, 0))
 	end)
 	
 	--authtext
@@ -347,7 +358,6 @@ local function JJNGP_fake_script() -- Top.Handler
 			loadtxt.Text = "Welcome to Void Hub!"
 			wait(1)
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/LoadingPage.lua"))();
-			
 		elseif keytxt.Text == adminkey then
 			print("debug")
 			wait()
@@ -396,8 +406,8 @@ local function JJNGP_fake_script() -- Top.Handler
 	
 	
 end
-coroutine.wrap(JJNGP_fake_script)()
-local function DVVLSB_fake_script() -- Top.Drag 
+coroutine.wrap(JPLIPZH_fake_script)()
+local function AKHM_fake_script() -- Top.Drag 
 	local script = Instance.new('LocalScript', Top)
 
 	local UIS = game:GetService('UserInputService')
@@ -435,11 +445,11 @@ local function DVVLSB_fake_script() -- Top.Drag
 		end
 	end)
 end
-coroutine.wrap(DVVLSB_fake_script)()
-local function USYQW_fake_script() -- Loader.Loadthing 
+coroutine.wrap(AKHM_fake_script)()
+local function QVLIS_fake_script() -- Loader.Loadthing 
 	local script = Instance.new('LocalScript', Loader)
 
 	--loadscript
 	
 end
-coroutine.wrap(USYQW_fake_script)()
+coroutine.wrap(QVLIS_fake_script)()
