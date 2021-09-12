@@ -44,8 +44,8 @@ Main.Parent = Top
 Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.499999851, 0, 2.38483214, 0)
-Main.Size = UDim2.new(1.00000012, 0, 3.27710366, 0)
+Main.Position = UDim2.new(0.499999821, 0, 2.24772382, 0)
+Main.Size = UDim2.new(1, 0, 2.79999995, 0)
 
 UICorner_2.CornerRadius = UDim.new(0, 4)
 UICorner_2.Parent = Main
@@ -106,7 +106,7 @@ DiscCopy.AnchorPoint = Vector2.new(0.5, 0.5)
 DiscCopy.BackgroundTransparency = 1.000
 DiscCopy.BorderSizePixel = 0
 DiscCopy.LayoutOrder = 6
-DiscCopy.Position = UDim2.new(0.856567383, 0, 0.5409832, 0)
+DiscCopy.Position = UDim2.new(0.899999976, 0, 0.541000009, 0)
 DiscCopy.Size = UDim2.new(0.10884615, 0, 0.685953617, 0)
 DiscCopy.ZIndex = 50
 DiscCopy.Image = "rbxassetid://3926305904"
@@ -207,7 +207,7 @@ TitleUnderline.ZIndex = 999
 
 -- Scripts:
 
-local function IHJCI_fake_script() -- Top.Handler 
+local function XZOYNM_fake_script() -- Top.Handler 
 	local script = Instance.new('LocalScript', Top)
 
 	--variables
@@ -358,6 +358,8 @@ local function IHJCI_fake_script() -- Top.Handler
 			loadtxt.Text = "Welcome to Void Hub!"
 			wait(1)
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/LoadingPage.lua"))();
+			wait()
+			top:Destroy()
 		elseif keytxt.Text == adminkey then
 			print("debug")
 			wait()
@@ -389,6 +391,8 @@ local function IHJCI_fake_script() -- Top.Handler
 			loadtxt.Text = "Welcome to Void Hub!"
 			wait(1)
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/QuartsZol/MyNewMinecraftMod/main/LoadingPage.lua"))();
+			wait()
+			top:Destroy()
 		else
 			print("Invalid Key!")
 			auth.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
@@ -406,8 +410,8 @@ local function IHJCI_fake_script() -- Top.Handler
 	
 	
 end
-coroutine.wrap(IHJCI_fake_script)()
-local function KFOU_fake_script() -- Top.Drag 
+coroutine.wrap(XZOYNM_fake_script)()
+local function QOGPYOP_fake_script() -- Top.Drag 
 	local script = Instance.new('LocalScript', Top)
 
 	local UIS = game:GetService('UserInputService')
@@ -445,11 +449,11 @@ local function KFOU_fake_script() -- Top.Drag
 		end
 	end)
 end
-coroutine.wrap(KFOU_fake_script)()
-local function MBIJ_fake_script() -- Loader.Loadthing 
+coroutine.wrap(QOGPYOP_fake_script)()
+local function ITMF_fake_script() -- Loader.Loadthing 
 	local script = Instance.new('LocalScript', Loader)
 
 	--loadscript
 	
 end
-coroutine.wrap(MBIJ_fake_script)()
+coroutine.wrap(ITMF_fake_script)()
