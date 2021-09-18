@@ -1,4 +1,4 @@
-local WeenyWorldRemapped = Instance.new("ScreenGui")
+local Thingo = Instance.new("ScreenGui")
 
 
 local Top = Instance.new("Frame")
@@ -40,22 +40,25 @@ local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local Close = Instance.new("ImageButton")
 
 
-local Loader = Instance.new("Frame")
-
-
 local UICorner_5 = Instance.new("UICorner")
 
 
-local Emptyload = Instance.new("Frame")
+local Loader = Instance.new("Frame")
 
 
 local UICorner_6 = Instance.new("UICorner")
 
 
-local Load = Instance.new("Frame")
+local Emptyload = Instance.new("Frame")
 
 
 local UICorner_7 = Instance.new("UICorner")
+
+
+local Load = Instance.new("Frame")
+
+
+local UICorner_8 = Instance.new("UICorner")
 
 
 local LoaderState = Instance.new("TextLabel")
@@ -69,20 +72,20 @@ local TitleUnderline = Instance.new("Frame")
 
 
 
-WeenyWorldRemapped.Name = "WeenyWorldRemapped"
+Thingo.Name = "Thingo"
 
 
-WeenyWorldRemapped.Parent = game.CoreGui
+Thingo.Parent = game.CoreGui
 
 
-WeenyWorldRemapped.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Thingo.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 
 
 Top.Name = "Top"
 
 
-Top.Parent = WeenyWorldRemapped
+Top.Parent = Thingo
 
 
 Top.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -376,7 +379,10 @@ Close.Parent = Top
 Close.AnchorPoint = Vector2.new(0.5, 0.5)
 
 
-Close.BackgroundTransparency = 1.000
+Close.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+
+
+Close.BackgroundTransparency = 0.500
 
 
 Close.BorderSizePixel = 0
@@ -401,6 +407,13 @@ Close.ImageRectOffset = Vector2.new(924, 724)
 
 
 Close.ImageRectSize = Vector2.new(36, 36)
+
+
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+
+
+UICorner_5.Parent = Close
 
 
 
@@ -429,10 +442,10 @@ Loader.Visible = false
 
 
 
-UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_6.CornerRadius = UDim.new(0, 4)
 
 
-UICorner_5.Parent = Loader
+UICorner_6.Parent = Loader
 
 
 
@@ -464,10 +477,10 @@ Emptyload.ZIndex = 300
 
 
 
-UICorner_6.CornerRadius = UDim.new(0, 6)
+UICorner_7.CornerRadius = UDim.new(0, 6)
 
 
-UICorner_6.Parent = Emptyload
+UICorner_7.Parent = Emptyload
 
 
 
@@ -499,10 +512,10 @@ Load.ZIndex = 301
 
 
 
-UICorner_7.CornerRadius = UDim.new(0, 6)
+UICorner_8.CornerRadius = UDim.new(0, 6)
 
 
-UICorner_7.Parent = Load
+UICorner_8.Parent = Load
 
 
 
@@ -539,7 +552,7 @@ LoaderState.Text = "N/A"
 LoaderState.TextColor3 = Color3.fromRGB(243, 243, 243)
 
 
-LoaderState.TextSize = 24.000
+LoaderState.TextSize = 20.000
 
 
 LoaderState.TextWrapped = true
@@ -575,7 +588,7 @@ TitleUnderline.ZIndex = 999
 
 
 
-local function ZWTI_fake_script() -- Top.Handler 
+local function KTUYPD_fake_script() -- Top.Handler 
 
 
 	local script = Instance.new('LocalScript', Top)
@@ -631,6 +644,9 @@ local function ZWTI_fake_script() -- Top.Handler
 
 
 	local discordbouncetime = 1
+
+
+	local gamename = game.Name
 
 
 	
@@ -981,10 +997,10 @@ local function ZWTI_fake_script() -- Top.Handler
 			loadbar:TweenSize(UDim2.new(0.4, 0,1.0, 0),'Out','Sine',1)
 
 
-			loadtxt.Text = "Initialising..."
+			loadtxt.Text = ("Game Detected! "..gamename)
 
 
-			wait(1)
+			wait(1.3)
 
 
 			loadbar:TweenSize(UDim2.new(0.5, 0,1.0, 0),'Out','Sine',1)
@@ -1027,6 +1043,12 @@ local function ZWTI_fake_script() -- Top.Handler
 
 
 			wait()
+
+
+			top:TweenPosition(UDim2.new(0.5, 0,-0.2, 0))
+
+
+			wait(1)
 
 
 			top:Destroy()
@@ -1080,10 +1102,10 @@ local function ZWTI_fake_script() -- Top.Handler
 			loadbar:TweenSize(UDim2.new(0.4, 0,1.0, 0),'Out','Sine',1)
 
 
-			loadtxt.Text = "Initialising..."
+			loadtxt.Text = ("Game Detected! "..gamename)
 
 
-			wait(1)
+			wait(1.3)
 
 
 			loadbar:TweenSize(UDim2.new(0.5, 0,1.0, 0),'Out','Sine',1)
@@ -1126,6 +1148,12 @@ local function ZWTI_fake_script() -- Top.Handler
 
 
 			wait()
+
+
+			top:TweenPosition(UDim2.new(0.5, 0,-0.2, 0))
+
+
+			wait(1)
 
 
 			top:Destroy()
@@ -1182,10 +1210,10 @@ local function ZWTI_fake_script() -- Top.Handler
 end
 
 
-coroutine.wrap(ZWTI_fake_script)()
+coroutine.wrap(KTUYPD_fake_script)()
 
 
-local function LBGVD_fake_script() -- Top.Drag 
+local function MESXZ_fake_script() -- Top.Drag 
 
 
 	local script = Instance.new('LocalScript', Top)
@@ -1297,10 +1325,10 @@ local function LBGVD_fake_script() -- Top.Drag
 end
 
 
-coroutine.wrap(LBGVD_fake_script)()
+coroutine.wrap(MESXZ_fake_script)()
 
 
-local function VLXSAZR_fake_script() -- Loader.Loadthing 
+local function IFWYHX_fake_script() -- Loader.Loadthing 
 
 
 	local script = Instance.new('LocalScript', Loader)
@@ -1316,6 +1344,6 @@ local function VLXSAZR_fake_script() -- Loader.Loadthing
 end
 
 
-coroutine.wrap(VLXSAZR_fake_script)()
+coroutine.wrap(IFWYHX_fake_script)()
 
 
